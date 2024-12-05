@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Results</title>
+</head>
+<body>
+    <h1>Optimal Routes</h1>
+
+    <h2>Nearest Route</h2>
+    <p><strong>Optimal Route:</strong> {{ nearest_route | join(', ') }}</p>
+    <p><strong>Total Distance:</strong> {{ nearest_distance }} km</p>
+
+    <h2>Cheapest Route</h2>
+    <p><strong>Optimal Route:</strong> {{ cheapest_route | join(', ') }}</p>
+    <p><strong>Total Distance:</strong> {{ cheapest_distance }} km</p>
+
+    <a href="/">Back to Map</a>
+</body>
+</html>
