@@ -3,19 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Results</title>
+    <title>Optimal Routes</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2C3E50;
+        }
+
+        h2 {
+            margin-top: 40px;
+            font-size: 24px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin: 10px 20px;
+        }
+
+        .route-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin-top: 30px;
+        }
+
+        .route-info {
+            width: 45%;
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin: 10px;
+        }
+
+        .route-info h3 {
+            font-size: 22px;
+            color: #16A085;
+        }
+
+        .map-container {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+
+        .back-link {
+            display: block;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 30px;
+            color: #3498DB;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
 </head>
 <body>
     <h1>Optimal Routes</h1>
 
-    <h2>Nearest Route</h2>
-    <p><strong>Optimal Route:</strong> {{ nearest_route | join(', ') }}</p>
-    <p><strong>Total Distance:</strong> {{ nearest_distance }} km</p>
+    <div class="route-container">
+        <div class="route-info">
+            <h2>Nearest Route</h2>
+            <p><strong>Optimal Route:</strong> {{ nearest_route | join(', ') }}</p>
+            <p><strong>Total Distance:</strong> {{ nearest_distance }} km</p>
+            <p><strong>Total Price:</strong> Rp {{ nearest_route_prices }}</p>
 
-    <h2>Cheapest Route</h2>
-    <p><strong>Optimal Route:</strong> {{ cheapest_route | join(', ') }}</p>
-    <p><strong>Total Distance:</strong> {{ cheapest_distance }} km</p>
+            <h3>Nearest Locations on Map</h3>
+            <div id="nearest-map" class="map-container"></div>
+        </div>
 
-    <a href="/">Back to Map</a>
+        <div class="route-info">
+            <h2>Cheapest Route</h2>
+            <p><strong>Optimal Route:</strong> {{ cheapest_route | join(', ') }}</p>
+            <p><strong>Total Distance:</strong> {{ cheapest_distance }} km</p>
+            <p><strong>Total Price:</strong> Rp {{ cheapest_route_prices }}</p>
+
+            <h3>Cheapest Locations on Map</h3>
+            <div id="cheapest-map" class="map-container"></div>
+        </div>
+    </div>
+
+    <a href="/" class="back-link">Back to Map</a>
+
+    <script>
+        var nearestLocations = {{ nearest_route_coordinates | tojson }};
+        var map = L.map('nearest-map').setView([-6.2088, 106.8456], 12); // Center map to Jakarta
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map);
+
+        var latlngs = [];
+        nearestLocations.forEach(function(location, index) {
+            latlngs.push([location.lat, location.lng]);
+            // Menambahkan marker untuk setiap lokasi dan menampilkan urutan
+            L.marker([location.lat, location.lng])
+                .bindPopup("<b>" + (index + 1) + ". " + location.name + "</b>")
+                .addTo(map);
+        });
+
+        // Menambahkan polyline untuk rute yang terdekat
+        L.polyline(latlngs, { color: 'blue', weight: 5, opacity: 0.7 }).addTo(map);
+
+        var last = latlngs[latlngs.length - 1];
+        L.marker(last)
+            .addTo(map)
+            .bindPopup("End of Route")
+            .openPopup();
+        
+        var cheapestLocations = {{ cheapest_route_coordinates | tojson }};
+        var map2 = L.map('cheapest-map').setView([-6.2088, 106.8456], 12); // Center map to Jakarta
+
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+        }).addTo(map2);
+
+        var latlngs2 = [];
+        cheapestLocations.forEach(function(location, index) {
+            latlngs2.push([location.lat, location.lng]);
+            L.marker([location.lat, location.lng])
+                .bindPopup("<b>" + (index + 1) + ". " + location.name + "</b>")
+                .addTo(map2);
+        });
+
+        L.polyline(latlngs2, { color: 'green', weight: 5, opacity: 0.7 }).addTo(map2);
+
+        var last2 = latlngs2[latlngs2.length - 1];
+        L.marker(last2)
+            .addTo(map2)
+            .bindPopup("End of Route")
+            .openPopup();
+    </script>
 </body>
 </html>

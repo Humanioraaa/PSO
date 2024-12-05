@@ -21,13 +21,18 @@ def index():
     folium_map = folium.Map(location=[-6.2088, 106.8456], zoom_start=12)
 
     for _, row in dataset.iterrows():
+        # Tambahkan JavaScript di popup untuk mengirim data ke form
+        popup = f"""
+        <b>{row['Place_Name']}</b><br>
+        <button onclick="parent.setCoordinates({row['Lat']}, {row['Long']})">Pilih</button>
+        """
         folium.Marker(
             location=[row["Lat"], row["Long"]],
-            popup=row["Place_Name"],
+            popup=popup,
             icon=folium.Icon(color="blue")
         ).add_to(folium_map)
 
-    folium_map.save("templates/map.html")
+    folium_map.save("static/map.html")
     return render_template("index.html")
 
 @app.route("/calculate")
@@ -54,7 +59,9 @@ def calculate():
     # Temukan destinasi terdekat dan termurah
     user_distances = distance_matrix.loc[user_id].drop(user_id)
     nearest_5_ids = user_distances.nsmallest(5).index.tolist()
-    cheapest_5_ids = dataset.nsmallest(5, "Price")['Place_Id'].tolist()
+    
+    # Update bagian cheapest route dengan mempertimbangkan harga dan jarak
+    cheapest_5_ids = dataset[['Place_Id', 'Price']].sort_values(by='Price').head(5)['Place_Id'].tolist()
 
     nearest_matrix = distance_matrix.loc[nearest_5_ids, nearest_5_ids]
     cheapest_matrix = distance_matrix.loc[cheapest_5_ids, cheapest_5_ids]
@@ -65,13 +72,33 @@ def calculate():
     nearest_route_names = data_with_user[data_with_user['Place_Id'].isin(nearest_route)]['Place_Name'].tolist()
     cheapest_route_names = data_with_user[data_with_user['Place_Id'].isin(cheapest_route)]['Place_Name'].tolist()
 
+    # Ambil koordinat untuk tempat-tempat dalam rute
+    nearest_route_coordinates = [
+        {"name": row["Place_Name"], "lat": row["Lat"], "lng": row["Long"]}
+        for _, row in data_with_user[data_with_user['Place_Id'].isin(nearest_route)].iterrows()
+    ]
+    cheapest_route_coordinates = [
+        {"name": row["Place_Name"], "lat": row["Lat"], "lng": row["Long"]}
+        for _, row in data_with_user[data_with_user['Place_Id'].isin(cheapest_route)].iterrows()
+    ]
+    
+    # Hitung total harga untuk nearest route dan cheapest route
+    nearest_route_prices = data_with_user[data_with_user['Place_Id'].isin(nearest_route)]['Price'].sum()
+    cheapest_route_prices = data_with_user[data_with_user['Place_Id'].isin(cheapest_route)]['Price'].sum()
+
     return render_template(
         "result.html",
         nearest_route=nearest_route_names,
         nearest_distance=nearest_distance,
         cheapest_route=cheapest_route_names,
         cheapest_distance=cheapest_distance,
+        nearest_route_coordinates=nearest_route_coordinates,
+        cheapest_route_coordinates=cheapest_route_coordinates,
+        nearest_route_prices=nearest_route_prices,
+        cheapest_route_prices=cheapest_route_prices
     )
+
+
 
 if __name__ == "__main__":
     app.run(debug=True)
