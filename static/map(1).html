@@ -1,0 +1,2340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a620e49fac3480523bb4926a82c01830 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a620e49fac3480523bb4926a82c01830" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a620e49fac3480523bb4926a82c01830 = L.map(
+                "map_a620e49fac3480523bb4926a82c01830",
+                {
+                    center: [-6.2088, 106.8456],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_4fab6f5af2fe7ff2a6e1e5504e9fb081 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_4fab6f5af2fe7ff2a6e1e5504e9fb081.addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var marker_f0c6fb523f829088e4397fb9666504a8 = L.marker(
+                [-6.1753924, 106.8271528],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_bb6b2e2e2b7e316454b1ffe28d5a38cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f0c6fb523f829088e4397fb9666504a8.setIcon(icon_bb6b2e2e2b7e316454b1ffe28d5a38cd);
+        
+    
+        var popup_4d6b464f7d6f98c13ddbca8114b3c038 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9f795994b95f7427de6d2d8571f40aa = $(`<div id="html_d9f795994b95f7427de6d2d8571f40aa" style="width: 100.0%; height: 100.0%;">         <b>Monumen Nasional</b><br>         <button onclick="parent.setCoordinates(-6.1753924, 106.8271528)">Pilih</button>         </div>`)[0];
+                popup_4d6b464f7d6f98c13ddbca8114b3c038.setContent(html_d9f795994b95f7427de6d2d8571f40aa);
+            
+        
+
+        marker_f0c6fb523f829088e4397fb9666504a8.bindPopup(popup_4d6b464f7d6f98c13ddbca8114b3c038)
+        ;
+
+        
+    
+    
+            var marker_102ab5c42583df18773effa379a3ac4c = L.marker(
+                [-6.137644799999999, 106.8171245],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_532365bd8afc7f60c6c7b8d53c4f43f3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_102ab5c42583df18773effa379a3ac4c.setIcon(icon_532365bd8afc7f60c6c7b8d53c4f43f3);
+        
+    
+        var popup_c68f29a43aa8b93f1d24d078069fd947 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1b304d3c0942b982a412f5c26a95b84b = $(`<div id="html_1b304d3c0942b982a412f5c26a95b84b" style="width: 100.0%; height: 100.0%;">         <b>Kota Tua</b><br>         <button onclick="parent.setCoordinates(-6.137644799999999, 106.8171245)">Pilih</button>         </div>`)[0];
+                popup_c68f29a43aa8b93f1d24d078069fd947.setContent(html_1b304d3c0942b982a412f5c26a95b84b);
+            
+        
+
+        marker_102ab5c42583df18773effa379a3ac4c.bindPopup(popup_c68f29a43aa8b93f1d24d078069fd947)
+        ;
+
+        
+    
+    
+            var marker_6647af953a1a5dc155eb810a9862d397 = L.marker(
+                [-6.125312399999999, 106.8335377],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_d36018940265af1175c8458dab4c3ada = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6647af953a1a5dc155eb810a9862d397.setIcon(icon_d36018940265af1175c8458dab4c3ada);
+        
+    
+        var popup_bc08c469682b2ea83607b35cc4740cd1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6c66d24110bd627cdf13ef0f315c1240 = $(`<div id="html_6c66d24110bd627cdf13ef0f315c1240" style="width: 100.0%; height: 100.0%;">         <b>Dunia Fantasi</b><br>         <button onclick="parent.setCoordinates(-6.125312399999999, 106.8335377)">Pilih</button>         </div>`)[0];
+                popup_bc08c469682b2ea83607b35cc4740cd1.setContent(html_6c66d24110bd627cdf13ef0f315c1240);
+            
+        
+
+        marker_6647af953a1a5dc155eb810a9862d397.bindPopup(popup_bc08c469682b2ea83607b35cc4740cd1)
+        ;
+
+        
+    
+    
+            var marker_2b4d582640eff80d6b05089accf63e67 = L.marker(
+                [-6.302445899999999, 106.8951559],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_5b5170225506f83c3d23a859a0d2e5e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b4d582640eff80d6b05089accf63e67.setIcon(icon_5b5170225506f83c3d23a859a0d2e5e6);
+        
+    
+        var popup_1023057da29656f9002934318afce3c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_268f707595e98e9694f87ea997735849 = $(`<div id="html_268f707595e98e9694f87ea997735849" style="width: 100.0%; height: 100.0%;">         <b>Taman Mini Indonesia Indah (TMII)</b><br>         <button onclick="parent.setCoordinates(-6.302445899999999, 106.8951559)">Pilih</button>         </div>`)[0];
+                popup_1023057da29656f9002934318afce3c1.setContent(html_268f707595e98e9694f87ea997735849);
+            
+        
+
+        marker_2b4d582640eff80d6b05089accf63e67.bindPopup(popup_1023057da29656f9002934318afce3c1)
+        ;
+
+        
+    
+    
+            var marker_718c8d2b781062d499c8e536de54fd32 = L.marker(
+                [-6.12419, 106.839134],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_c300dbe4f5e075cb0c73fd40c97e8ab8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_718c8d2b781062d499c8e536de54fd32.setIcon(icon_c300dbe4f5e075cb0c73fd40c97e8ab8);
+        
+    
+        var popup_8e8ff98fd6eeb77de50f067d944763dc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0912bdb9b1c4d77d7e7fe3d2095a2a73 = $(`<div id="html_0912bdb9b1c4d77d7e7fe3d2095a2a73" style="width: 100.0%; height: 100.0%;">         <b>Atlantis Water Adventure</b><br>         <button onclick="parent.setCoordinates(-6.12419, 106.839134)">Pilih</button>         </div>`)[0];
+                popup_8e8ff98fd6eeb77de50f067d944763dc.setContent(html_0912bdb9b1c4d77d7e7fe3d2095a2a73);
+            
+        
+
+        marker_718c8d2b781062d499c8e536de54fd32.bindPopup(popup_8e8ff98fd6eeb77de50f067d944763dc)
+        ;
+
+        
+    
+    
+            var marker_d3ab9ace5d6ce4cb58fcbecfb580d0aa = L.marker(
+                [-6.117333200000001, 106.8579951],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_2bc4dd293532235a7d7a4e3f8320b84b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d3ab9ace5d6ce4cb58fcbecfb580d0aa.setIcon(icon_2bc4dd293532235a7d7a4e3f8320b84b);
+        
+    
+        var popup_09a97f135fb9e5b5619d44b8cd2709f3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5fa3e2cd2e0464f2bd72d799895096ad = $(`<div id="html_5fa3e2cd2e0464f2bd72d799895096ad" style="width: 100.0%; height: 100.0%;">         <b>Taman Impian Jaya Ancol</b><br>         <button onclick="parent.setCoordinates(-6.117333200000001, 106.8579951)">Pilih</button>         </div>`)[0];
+                popup_09a97f135fb9e5b5619d44b8cd2709f3.setContent(html_5fa3e2cd2e0464f2bd72d799895096ad);
+            
+        
+
+        marker_d3ab9ace5d6ce4cb58fcbecfb580d0aa.bindPopup(popup_09a97f135fb9e5b5619d44b8cd2709f3)
+        ;
+
+        
+    
+    
+            var marker_2e6a98ab0e636b86df26dd69db642a4c = L.marker(
+                [-6.3124593, 106.8201865],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_1568e56a5a5323ba0511258a8720c2ca = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2e6a98ab0e636b86df26dd69db642a4c.setIcon(icon_1568e56a5a5323ba0511258a8720c2ca);
+        
+    
+        var popup_3ff133e46ff613cf92af8cbc0754ad1a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_56eee6cdfed274b6fc384b3f0bee427f = $(`<div id="html_56eee6cdfed274b6fc384b3f0bee427f" style="width: 100.0%; height: 100.0%;">         <b>Kebun Binatang Ragunan</b><br>         <button onclick="parent.setCoordinates(-6.3124593, 106.8201865)">Pilih</button>         </div>`)[0];
+                popup_3ff133e46ff613cf92af8cbc0754ad1a.setContent(html_56eee6cdfed274b6fc384b3f0bee427f);
+            
+        
+
+        marker_2e6a98ab0e636b86df26dd69db642a4c.bindPopup(popup_3ff133e46ff613cf92af8cbc0754ad1a)
+        ;
+
+        
+    
+    
+            var marker_b7158d584943384231ecfc3eb6de8dcf = L.marker(
+                [-6.125801699999999, 106.8363249],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_3fd97e4c6f744f81425ef9b931453bb7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b7158d584943384231ecfc3eb6de8dcf.setIcon(icon_3fd97e4c6f744f81425ef9b931453bb7);
+        
+    
+        var popup_06f161759bbcc2e0efcc7ecd117903c9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e9c9a665e9aba6238e9bc2478d0dadd4 = $(`<div id="html_e9c9a665e9aba6238e9bc2478d0dadd4" style="width: 100.0%; height: 100.0%;">         <b>Ocean Ecopark</b><br>         <button onclick="parent.setCoordinates(-6.125801699999999, 106.8363249)">Pilih</button>         </div>`)[0];
+                popup_06f161759bbcc2e0efcc7ecd117903c9.setContent(html_e9c9a665e9aba6238e9bc2478d0dadd4);
+            
+        
+
+        marker_b7158d584943384231ecfc3eb6de8dcf.bindPopup(popup_06f161759bbcc2e0efcc7ecd117903c9)
+        ;
+
+        
+    
+    
+            var marker_50817bbd50dfb70a6815b68ba4dfecf2 = L.marker(
+                [1.07888, 103.931398],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_f211ad59f9682b24611155fb09cafe87 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_50817bbd50dfb70a6815b68ba4dfecf2.setIcon(icon_f211ad59f9682b24611155fb09cafe87);
+        
+    
+        var popup_d0a31e0bfd42f7bfd3306fe13b1e86ea = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f18eddf3dc6be2969d27a7bc18b68704 = $(`<div id="html_f18eddf3dc6be2969d27a7bc18b68704" style="width: 100.0%; height: 100.0%;">         <b>Pelabuhan Marina</b><br>         <button onclick="parent.setCoordinates(1.07888, 103.931398)">Pilih</button>         </div>`)[0];
+                popup_d0a31e0bfd42f7bfd3306fe13b1e86ea.setContent(html_f18eddf3dc6be2969d27a7bc18b68704);
+            
+        
+
+        marker_50817bbd50dfb70a6815b68ba4dfecf2.bindPopup(popup_d0a31e0bfd42f7bfd3306fe13b1e86ea)
+        ;
+
+        
+    
+    
+            var marker_db2405ceba99f6a65a03fd5475784a7c = L.marker(
+                [-5.803205300000001, 106.5237907],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_e984f41883ea4a7b7d3d429fbc76ded6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_db2405ceba99f6a65a03fd5475784a7c.setIcon(icon_e984f41883ea4a7b7d3d429fbc76ded6);
+        
+    
+        var popup_ec489466f45edc7e4e3d5a4c5c945d59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4e996340a9df4551de4307cb5f4b8e85 = $(`<div id="html_4e996340a9df4551de4307cb5f4b8e85" style="width: 100.0%; height: 100.0%;">         <b>Pulau Tidung</b><br>         <button onclick="parent.setCoordinates(-5.803205300000001, 106.5237907)">Pilih</button>         </div>`)[0];
+                popup_ec489466f45edc7e4e3d5a4c5c945d59.setContent(html_4e996340a9df4551de4307cb5f4b8e85);
+            
+        
+
+        marker_db2405ceba99f6a65a03fd5475784a7c.bindPopup(popup_ec489466f45edc7e4e3d5a4c5c945d59)
+        ;
+
+        
+    
+    
+            var marker_07a8ff223684981e695e58ed64138310 = L.marker(
+                [-6.035832999999999, 106.746944],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_c68517d5bb27f7645d8d69e52cb35c04 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_07a8ff223684981e695e58ed64138310.setIcon(icon_c68517d5bb27f7645d8d69e52cb35c04);
+        
+    
+        var popup_c6fb522c4c54108bbe5e424a38c3923a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4df3b9e25349e7160f4c36eb2ec37bc6 = $(`<div id="html_4df3b9e25349e7160f4c36eb2ec37bc6" style="width: 100.0%; height: 100.0%;">         <b>Pulau Bidadari</b><br>         <button onclick="parent.setCoordinates(-6.035832999999999, 106.746944)">Pilih</button>         </div>`)[0];
+                popup_c6fb522c4c54108bbe5e424a38c3923a.setContent(html_4df3b9e25349e7160f4c36eb2ec37bc6);
+            
+        
+
+        marker_07a8ff223684981e695e58ed64138310.bindPopup(popup_c6fb522c4c54108bbe5e424a38c3923a)
+        ;
+
+        
+    
+    
+            var marker_2f4820e662c4fe09fdac27bba5698bd1 = L.marker(
+                [-5.9074328, 106.5863989],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_a7fbcf1e8f940dcb0e5b46b4f581fde2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2f4820e662c4fe09fdac27bba5698bd1.setIcon(icon_a7fbcf1e8f940dcb0e5b46b4f581fde2);
+        
+    
+        var popup_138f8e151fc4a7ab1f8b3b077a7e2d98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_58f53afa923b4abc8d865acd49286d0b = $(`<div id="html_58f53afa923b4abc8d865acd49286d0b" style="width: 100.0%; height: 100.0%;">         <b>Pulau Pari</b><br>         <button onclick="parent.setCoordinates(-5.9074328, 106.5863989)">Pilih</button>         </div>`)[0];
+                popup_138f8e151fc4a7ab1f8b3b077a7e2d98.setContent(html_58f53afa923b4abc8d865acd49286d0b);
+            
+        
+
+        marker_2f4820e662c4fe09fdac27bba5698bd1.bindPopup(popup_138f8e151fc4a7ab1f8b3b077a7e2d98)
+        ;
+
+        
+    
+    
+            var marker_1f3b0d56d3f0b3ce5842c545b5b0f19c = L.marker(
+                [-5.745962, 106.6136577],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_509aa2e37ff794b0e763c5afb1b6d4bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1f3b0d56d3f0b3ce5842c545b5b0f19c.setIcon(icon_509aa2e37ff794b0e763c5afb1b6d4bb);
+        
+    
+        var popup_32fef245f889bde0d3355fe607b84aa6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2db8a0b5aa65b79c6519b9067f2fd63f = $(`<div id="html_2db8a0b5aa65b79c6519b9067f2fd63f" style="width: 100.0%; height: 100.0%;">         <b>Pulau Pramuka</b><br>         <button onclick="parent.setCoordinates(-5.745962, 106.6136577)">Pilih</button>         </div>`)[0];
+                popup_32fef245f889bde0d3355fe607b84aa6.setContent(html_2db8a0b5aa65b79c6519b9067f2fd63f);
+            
+        
+
+        marker_1f3b0d56d3f0b3ce5842c545b5b0f19c.bindPopup(popup_32fef245f889bde0d3355fe607b84aa6)
+        ;
+
+        
+    
+    
+            var marker_2ff2e52a3ba94e3010db913eca68c7a2 = L.marker(
+                [-5.587055, 106.5885],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_0206ade1b5be312cacd3121c21e0592f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2ff2e52a3ba94e3010db913eca68c7a2.setIcon(icon_0206ade1b5be312cacd3121c21e0592f);
+        
+    
+        var popup_b1e56bdb74a70ab0a8fdf82f6d9515da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f18a8e363bf2f5ed5c4f1cafa364647b = $(`<div id="html_f18a8e363bf2f5ed5c4f1cafa364647b" style="width: 100.0%; height: 100.0%;">         <b>Pulau Pelangi</b><br>         <button onclick="parent.setCoordinates(-5.587055, 106.5885)">Pilih</button>         </div>`)[0];
+                popup_b1e56bdb74a70ab0a8fdf82f6d9515da.setContent(html_f18a8e363bf2f5ed5c4f1cafa364647b);
+            
+        
+
+        marker_2ff2e52a3ba94e3010db913eca68c7a2.bindPopup(popup_b1e56bdb74a70ab0a8fdf82f6d9515da)
+        ;
+
+        
+    
+    
+            var marker_835972a7afeaaae550365f28861b4666 = L.marker(
+                [-6.1766868, 106.8417666],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_b59eb67ccb31a353fcf12f55e36e3dea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_835972a7afeaaae550365f28861b4666.setIcon(icon_b59eb67ccb31a353fcf12f55e36e3dea);
+        
+    
+        var popup_6b1f563589dd0188d804ff60de3b81da = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f7bfc249f5e5cd9d7fe3a93cb37991aa = $(`<div id="html_f7bfc249f5e5cd9d7fe3a93cb37991aa" style="width: 100.0%; height: 100.0%;">         <b>Pasar Seni</b><br>         <button onclick="parent.setCoordinates(-6.1766868, 106.8417666)">Pilih</button>         </div>`)[0];
+                popup_6b1f563589dd0188d804ff60de3b81da.setContent(html_f7bfc249f5e5cd9d7fe3a93cb37991aa);
+            
+        
+
+        marker_835972a7afeaaae550365f28861b4666.bindPopup(popup_6b1f563589dd0188d804ff60de3b81da)
+        ;
+
+        
+    
+    
+            var marker_443f3da5808adb3c75d0a776ceab1d23 = L.marker(
+                [-6.1314572, 106.8106169],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_bfa888184b53c3f44248958548f5589c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_443f3da5808adb3c75d0a776ceab1d23.setIcon(icon_bfa888184b53c3f44248958548f5589c);
+        
+    
+        var popup_1a14191c5bebb8ec918aebb0bbea023e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ad945bb1176ed5b8ae7bbca854b1e8e = $(`<div id="html_5ad945bb1176ed5b8ae7bbca854b1e8e" style="width: 100.0%; height: 100.0%;">         <b>Jembatan Kota Intan</b><br>         <button onclick="parent.setCoordinates(-6.1314572, 106.8106169)">Pilih</button>         </div>`)[0];
+                popup_1a14191c5bebb8ec918aebb0bbea023e.setContent(html_5ad945bb1176ed5b8ae7bbca854b1e8e);
+            
+        
+
+        marker_443f3da5808adb3c75d0a776ceab1d23.bindPopup(popup_1a14191c5bebb8ec918aebb0bbea023e)
+        ;
+
+        
+    
+    
+            var marker_c38f704179e80c47ddd4627b16262e81 = L.marker(
+                [-6.136448899999999, 106.8130661],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_54fd68f24916ec6354dd1388bf0347e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c38f704179e80c47ddd4627b16262e81.setIcon(icon_54fd68f24916ec6354dd1388bf0347e7);
+        
+    
+        var popup_9d7a19d39105bcb787f8a88237a015cd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b943acc45124c0648cb291cc374cec9d = $(`<div id="html_b943acc45124c0648cb291cc374cec9d" style="width: 100.0%; height: 100.0%;">         <b>Museum Fatahillah</b><br>         <button onclick="parent.setCoordinates(-6.136448899999999, 106.8130661)">Pilih</button>         </div>`)[0];
+                popup_9d7a19d39105bcb787f8a88237a015cd.setContent(html_b943acc45124c0648cb291cc374cec9d);
+            
+        
+
+        marker_c38f704179e80c47ddd4627b16262e81.bindPopup(popup_9d7a19d39105bcb787f8a88237a015cd)
+        ;
+
+        
+    
+    
+            var marker_ef55b145e3ffb39aa071523dc846dc55 = L.marker(
+                [-6.137127, 106.813005],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_a5def9d5efbd43cd5181f39c6d666870 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ef55b145e3ffb39aa071523dc846dc55.setIcon(icon_a5def9d5efbd43cd5181f39c6d666870);
+        
+    
+        var popup_c810a7a9def2a6832e3c3dd0a8c928ec = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2e704a2e583ef38c3d8c28e057aa5e35 = $(`<div id="html_2e704a2e583ef38c3d8c28e057aa5e35" style="width: 100.0%; height: 100.0%;">         <b>Museum Bank Indonesia</b><br>         <button onclick="parent.setCoordinates(-6.137127, 106.813005)">Pilih</button>         </div>`)[0];
+                popup_c810a7a9def2a6832e3c3dd0a8c928ec.setContent(html_2e704a2e583ef38c3d8c28e057aa5e35);
+            
+        
+
+        marker_ef55b145e3ffb39aa071523dc846dc55.bindPopup(popup_c810a7a9def2a6832e3c3dd0a8c928ec)
+        ;
+
+        
+    
+    
+            var marker_e5abfcde4438c50a9f2d50ef5c5ce1c8 = L.marker(
+                [-6.225073499999999, 106.8097144],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_a18f25b86dcf6549f13e37cc34ac395b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e5abfcde4438c50a9f2d50ef5c5ce1c8.setIcon(icon_a18f25b86dcf6549f13e37cc34ac395b);
+        
+    
+        var popup_bb0705c71db4b9fa881a58d9bcd5bde9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5603a6f9fe2aa35abd7efa17b1d9e11e = $(`<div id="html_5603a6f9fe2aa35abd7efa17b1d9e11e" style="width: 100.0%; height: 100.0%;">         <b>Kidzania</b><br>         <button onclick="parent.setCoordinates(-6.225073499999999, 106.8097144)">Pilih</button>         </div>`)[0];
+                popup_bb0705c71db4b9fa881a58d9bcd5bde9.setContent(html_5603a6f9fe2aa35abd7efa17b1d9e11e);
+            
+        
+
+        marker_e5abfcde4438c50a9f2d50ef5c5ce1c8.bindPopup(popup_bb0705c71db4b9fa881a58d9bcd5bde9)
+        ;
+
+        
+    
+    
+            var marker_757c7007d36167dc0f8563ced2f80bc5 = L.marker(
+                [-6.172224099999998, 106.8189695],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_16dba692c23aa6682ee398bc3b73dd48 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_757c7007d36167dc0f8563ced2f80bc5.setIcon(icon_16dba692c23aa6682ee398bc3b73dd48);
+        
+    
+        var popup_31e9077e5b550e4e7be0a6d00d84f1a6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4334cff35ac1a4cef7446c5f62e056e = $(`<div id="html_e4334cff35ac1a4cef7446c5f62e056e" style="width: 100.0%; height: 100.0%;">         <b>Museum Taman Prasasti</b><br>         <button onclick="parent.setCoordinates(-6.172224099999998, 106.8189695)">Pilih</button>         </div>`)[0];
+                popup_31e9077e5b550e4e7be0a6d00d84f1a6.setContent(html_e4334cff35ac1a4cef7446c5f62e056e);
+            
+        
+
+        marker_757c7007d36167dc0f8563ced2f80bc5.bindPopup(popup_31e9077e5b550e4e7be0a6d00d84f1a6)
+        ;
+
+        
+    
+    
+            var marker_fda80696c27b57d811d2686a3bffda49 = L.marker(
+                [-6.1349072, 106.8124452],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_e9d3839e93fded8e5f2b2802be0d9803 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fda80696c27b57d811d2686a3bffda49.setIcon(icon_e9d3839e93fded8e5f2b2802be0d9803);
+        
+    
+        var popup_16bf291cd4ad2ed1e85302cda16d71b5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_19039de904667f6d0dd3bf71a17591f6 = $(`<div id="html_19039de904667f6d0dd3bf71a17591f6" style="width: 100.0%; height: 100.0%;">         <b>Museum Wayang</b><br>         <button onclick="parent.setCoordinates(-6.1349072, 106.8124452)">Pilih</button>         </div>`)[0];
+                popup_16bf291cd4ad2ed1e85302cda16d71b5.setContent(html_19039de904667f6d0dd3bf71a17591f6);
+            
+        
+
+        marker_fda80696c27b57d811d2686a3bffda49.bindPopup(popup_16bf291cd4ad2ed1e85302cda16d71b5)
+        ;
+
+        
+    
+    
+            var marker_8c3078113ea6f9b63f369d989526dfc6 = L.marker(
+                [-6.17017, 106.83139],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_d0f3c0406cdd5e6fbf0b27354eae0a3d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8c3078113ea6f9b63f369d989526dfc6.setIcon(icon_d0f3c0406cdd5e6fbf0b27354eae0a3d);
+        
+    
+        var popup_a8e22a49eb3a26038496d4ac917b1b1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6b4d71e1570d4bb8e09c25e603d8ec97 = $(`<div id="html_6b4d71e1570d4bb8e09c25e603d8ec97" style="width: 100.0%; height: 100.0%;">         <b>Masjid Istiqlal</b><br>         <button onclick="parent.setCoordinates(-6.17017, 106.83139)">Pilih</button>         </div>`)[0];
+                popup_a8e22a49eb3a26038496d4ac917b1b1d.setContent(html_6b4d71e1570d4bb8e09c25e603d8ec97);
+            
+        
+
+        marker_8c3078113ea6f9b63f369d989526dfc6.bindPopup(popup_a8e22a49eb3a26038496d4ac917b1b1d)
+        ;
+
+        
+    
+    
+            var marker_45ee9ce12000d0089e68b1d745f18f16 = L.marker(
+                [-6.169225000000001, 106.833063],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_e1f0d555bac785094faa73fda31aedde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_45ee9ce12000d0089e68b1d745f18f16.setIcon(icon_e1f0d555bac785094faa73fda31aedde);
+        
+    
+        var popup_fd549ad9bb02ace93906eedb28adcba8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_025a5de013a8b2dd8b06733ce976b003 = $(`<div id="html_025a5de013a8b2dd8b06733ce976b003" style="width: 100.0%; height: 100.0%;">         <b>Gereja Katedral</b><br>         <button onclick="parent.setCoordinates(-6.169225000000001, 106.833063)">Pilih</button>         </div>`)[0];
+                popup_fd549ad9bb02ace93906eedb28adcba8.setContent(html_025a5de013a8b2dd8b06733ce976b003);
+            
+        
+
+        marker_45ee9ce12000d0089e68b1d745f18f16.bindPopup(popup_fd549ad9bb02ace93906eedb28adcba8)
+        ;
+
+        
+    
+    
+            var marker_36edc1579791a5e842ac7f5296e1a7eb = L.marker(
+                [-6.176402099999999, 106.8215901],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_aaadb856e7d6a4b851956b05311c7484 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_36edc1579791a5e842ac7f5296e1a7eb.setIcon(icon_aaadb856e7d6a4b851956b05311c7484);
+        
+    
+        var popup_95f41a859812b1a590422d924dd65d55 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5ebc7879de8ecdbf1050bd6a6f11c82a = $(`<div id="html_5ebc7879de8ecdbf1050bd6a6f11c82a" style="width: 100.0%; height: 100.0%;">         <b>Museum Nasional</b><br>         <button onclick="parent.setCoordinates(-6.176402099999999, 106.8215901)">Pilih</button>         </div>`)[0];
+                popup_95f41a859812b1a590422d924dd65d55.setContent(html_5ebc7879de8ecdbf1050bd6a6f11c82a);
+            
+        
+
+        marker_36edc1579791a5e842ac7f5296e1a7eb.bindPopup(popup_95f41a859812b1a590422d924dd65d55)
+        ;
+
+        
+    
+    
+            var marker_475b571e55f7e56ce9fb625feeace86b = L.marker(
+                [-6.189009599999999, 106.8119312],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_3dd5beecf81f29c9d5a95f4fe2094f75 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_475b571e55f7e56ce9fb625feeace86b.setIcon(icon_3dd5beecf81f29c9d5a95f4fe2094f75);
+        
+    
+        var popup_934bca3f4d8d2804cfb17d9eb7b6e106 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_a88a9f335fd395f33f4ee00b3e93a38b = $(`<div id="html_a88a9f335fd395f33f4ee00b3e93a38b" style="width: 100.0%; height: 100.0%;">         <b>Pasar Tanah Abang</b><br>         <button onclick="parent.setCoordinates(-6.189009599999999, 106.8119312)">Pilih</button>         </div>`)[0];
+                popup_934bca3f4d8d2804cfb17d9eb7b6e106.setContent(html_a88a9f335fd395f33f4ee00b3e93a38b);
+            
+        
+
+        marker_475b571e55f7e56ce9fb625feeace86b.bindPopup(popup_934bca3f4d8d2804cfb17d9eb7b6e106)
+        ;
+
+        
+    
+    
+            var marker_2dd0e74b5dce81d8a4abdb06cb6d1b9b = L.marker(
+                [-6.142758799999999, 106.8140791],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_69be798d13747daf7f0f3320173833b4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2dd0e74b5dce81d8a4abdb06cb6d1b9b.setIcon(icon_69be798d13747daf7f0f3320173833b4);
+        
+    
+        var popup_895ed3c8505d23905dc7d00fb6d08254 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_666bf9bed7619aa116c00fbc45aedbc7 = $(`<div id="html_666bf9bed7619aa116c00fbc45aedbc7" style="width: 100.0%; height: 100.0%;">         <b>Pecinan Glodok</b><br>         <button onclick="parent.setCoordinates(-6.142758799999999, 106.8140791)">Pilih</button>         </div>`)[0];
+                popup_895ed3c8505d23905dc7d00fb6d08254.setContent(html_666bf9bed7619aa116c00fbc45aedbc7);
+            
+        
+
+        marker_2dd0e74b5dce81d8a4abdb06cb6d1b9b.bindPopup(popup_895ed3c8505d23905dc7d00fb6d08254)
+        ;
+
+        
+    
+    
+            var marker_599ad8097bfca6536c6826be13aeefd7 = L.marker(
+                [-6.126477500000001, 106.842963],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_6b47ec13a8d0b05179cad64f5a342134 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_599ad8097bfca6536c6826be13aeefd7.setIcon(icon_6b47ec13a8d0b05179cad64f5a342134);
+        
+    
+        var popup_c845106861d969b3b6205b716d3f6402 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_76b0091db425f28656d59ba9337ec044 = $(`<div id="html_76b0091db425f28656d59ba9337ec044" style="width: 100.0%; height: 100.0%;">         <b>Sea World</b><br>         <button onclick="parent.setCoordinates(-6.126477500000001, 106.842963)">Pilih</button>         </div>`)[0];
+                popup_c845106861d969b3b6205b716d3f6402.setContent(html_76b0091db425f28656d59ba9337ec044);
+            
+        
+
+        marker_599ad8097bfca6536c6826be13aeefd7.bindPopup(popup_c845106861d969b3b6205b716d3f6402)
+        ;
+
+        
+    
+    
+            var marker_776a7336f332ed5450d014fff3095ace = L.marker(
+                [-6.3568093, 106.9062371],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_26d28c8efa08e2ba1f0286702e629532 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_776a7336f332ed5450d014fff3095ace.setIcon(icon_26d28c8efa08e2ba1f0286702e629532);
+        
+    
+        var popup_70e2e14ac5546604610f5b3def699594 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6f28f7c5b251ae5241cb0508e166eab2 = $(`<div id="html_6f28f7c5b251ae5241cb0508e166eab2" style="width: 100.0%; height: 100.0%;">         <b>Wisata Agro Edukatif Istana Susu Cibugary</b><br>         <button onclick="parent.setCoordinates(-6.3568093, 106.9062371)">Pilih</button>         </div>`)[0];
+                popup_70e2e14ac5546604610f5b3def699594.setContent(html_6f28f7c5b251ae5241cb0508e166eab2);
+            
+        
+
+        marker_776a7336f332ed5450d014fff3095ace.bindPopup(popup_70e2e14ac5546604610f5b3def699594)
+        ;
+
+        
+    
+    
+            var marker_ea782f20c5a2dd5fba5bdc3ad81802f9 = L.marker(
+                [-6.166788700000001, 106.8265261],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_4e16e11ed303ac1a52bd790e4daf6b71 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ea782f20c5a2dd5fba5bdc3ad81802f9.setIcon(icon_4e16e11ed303ac1a52bd790e4daf6b71);
+        
+    
+        var popup_0f6f8cbfc868950d3e50cf2cad187de4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_97e7ab0988922ebc99af0cd451230567 = $(`<div id="html_97e7ab0988922ebc99af0cd451230567" style="width: 100.0%; height: 100.0%;">         <b>Wisata Kuliner Pecenongan</b><br>         <button onclick="parent.setCoordinates(-6.166788700000001, 106.8265261)">Pilih</button>         </div>`)[0];
+                popup_0f6f8cbfc868950d3e50cf2cad187de4.setContent(html_97e7ab0988922ebc99af0cd451230567);
+            
+        
+
+        marker_ea782f20c5a2dd5fba5bdc3ad81802f9.bindPopup(popup_0f6f8cbfc868950d3e50cf2cad187de4)
+        ;
+
+        
+    
+    
+            var marker_ddb73eb69bf2b6758d0e60aaa86a9da0 = L.marker(
+                [-6.1964087, 106.8293106],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_f4bb7f9406482841ebccf9de8b739b8b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ddb73eb69bf2b6758d0e60aaa86a9da0.setIcon(icon_f4bb7f9406482841ebccf9de8b739b8b);
+        
+    
+        var popup_f0954361c4f5acba20fbb44891929cc2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7519a58cc651b61a09a2694d9260658c = $(`<div id="html_7519a58cc651b61a09a2694d9260658c" style="width: 100.0%; height: 100.0%;">         <b>Taman Menteng</b><br>         <button onclick="parent.setCoordinates(-6.1964087, 106.8293106)">Pilih</button>         </div>`)[0];
+                popup_f0954361c4f5acba20fbb44891929cc2.setContent(html_7519a58cc651b61a09a2694d9260658c);
+            
+        
+
+        marker_ddb73eb69bf2b6758d0e60aaa86a9da0.bindPopup(popup_f0954361c4f5acba20fbb44891929cc2)
+        ;
+
+        
+    
+    
+            var marker_dff00d3fcd4070b16f34ddc88d8c3879 = L.marker(
+                [-6.105334, 106.735584],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_5b5af9c2340ebd7a1be0d70b0377f33f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dff00d3fcd4070b16f34ddc88d8c3879.setIcon(icon_5b5af9c2340ebd7a1be0d70b0377f33f);
+        
+    
+        var popup_cb2b8344b93eb0ac4cce23c8721e8ec0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a7c410938898bd96a757a58ec693b5a = $(`<div id="html_0a7c410938898bd96a757a58ec693b5a" style="width: 100.0%; height: 100.0%;">         <b>Wisata Alam Mangrove Angke</b><br>         <button onclick="parent.setCoordinates(-6.105334, 106.735584)">Pilih</button>         </div>`)[0];
+                popup_cb2b8344b93eb0ac4cce23c8721e8ec0.setContent(html_0a7c410938898bd96a757a58ec693b5a);
+            
+        
+
+        marker_dff00d3fcd4070b16f34ddc88d8c3879.bindPopup(popup_cb2b8344b93eb0ac4cce23c8721e8ec0)
+        ;
+
+        
+    
+    
+            var marker_11851229f3bf3251c443e79e3cbd1b5b = L.marker(
+                [-6.341666699999999, 106.8238889],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_ee0177ea1161256e2ad79185f911c254 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_11851229f3bf3251c443e79e3cbd1b5b.setIcon(icon_ee0177ea1161256e2ad79185f911c254);
+        
+    
+        var popup_96dcaca0a81e26cf31c488e059e66d98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_55bb66a9dd26a3d7c075759dae3f0b81 = $(`<div id="html_55bb66a9dd26a3d7c075759dae3f0b81" style="width: 100.0%; height: 100.0%;">         <b>Setu Babakan</b><br>         <button onclick="parent.setCoordinates(-6.341666699999999, 106.8238889)">Pilih</button>         </div>`)[0];
+                popup_96dcaca0a81e26cf31c488e059e66d98.setContent(html_55bb66a9dd26a3d7c075759dae3f0b81);
+            
+        
+
+        marker_11851229f3bf3251c443e79e3cbd1b5b.bindPopup(popup_96dcaca0a81e26cf31c488e059e66d98)
+        ;
+
+        
+    
+    
+            var marker_b096a83f89065be14cb37b557a6805e1 = L.marker(
+                [-6.1994034, 106.8326228],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_fab5658fb524606fb0c79457cbdd4656 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b096a83f89065be14cb37b557a6805e1.setIcon(icon_fab5658fb524606fb0c79457cbdd4656);
+        
+    
+        var popup_9d1cc03ecd5f0029934adbdec2ecbd66 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_10df2ed9eb8e8861245d35398ab7d3b2 = $(`<div id="html_10df2ed9eb8e8861245d35398ab7d3b2" style="width: 100.0%; height: 100.0%;">         <b>Taman Suropati</b><br>         <button onclick="parent.setCoordinates(-6.1994034, 106.8326228)">Pilih</button>         </div>`)[0];
+                popup_9d1cc03ecd5f0029934adbdec2ecbd66.setContent(html_10df2ed9eb8e8861245d35398ab7d3b2);
+            
+        
+
+        marker_b096a83f89065be14cb37b557a6805e1.bindPopup(popup_9d1cc03ecd5f0029934adbdec2ecbd66)
+        ;
+
+        
+    
+    
+            var marker_5c313618d85a49ea2f2c4311a6f4f8d5 = L.marker(
+                [-6.241368999999999, 106.7890587],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_e670ef927e9494e569bf8f0e912e8ca9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5c313618d85a49ea2f2c4311a6f4f8d5.setIcon(icon_e670ef927e9494e569bf8f0e912e8ca9);
+        
+    
+        var popup_acb47ff788f6c639372b7db48b304d98 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_99ccc8175a04ff5b3efa3cfb4b9f1b9f = $(`<div id="html_99ccc8175a04ff5b3efa3cfb4b9f1b9f" style="width: 100.0%; height: 100.0%;">         <b>Pasar Taman Puring</b><br>         <button onclick="parent.setCoordinates(-6.241368999999999, 106.7890587)">Pilih</button>         </div>`)[0];
+                popup_acb47ff788f6c639372b7db48b304d98.setContent(html_99ccc8175a04ff5b3efa3cfb4b9f1b9f);
+            
+        
+
+        marker_5c313618d85a49ea2f2c4311a6f4f8d5.bindPopup(popup_acb47ff788f6c639372b7db48b304d98)
+        ;
+
+        
+    
+    
+            var marker_f25849e29f5fcc2b8254139198760662 = L.marker(
+                [-6.195180099999999, 106.8204412],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_6f9ecfc983baeb75b8374f8232412dea = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f25849e29f5fcc2b8254139198760662.setIcon(icon_6f9ecfc983baeb75b8374f8232412dea);
+        
+    
+        var popup_5e96400575e689b7f4ab2ccfb73160ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b62b331e8aa4e6cdb86f214f3d575f2a = $(`<div id="html_b62b331e8aa4e6cdb86f214f3d575f2a" style="width: 100.0%; height: 100.0%;">         <b>Grand Indonesia Mall</b><br>         <button onclick="parent.setCoordinates(-6.195180099999999, 106.8204412)">Pilih</button>         </div>`)[0];
+                popup_5e96400575e689b7f4ab2ccfb73160ab.setContent(html_b62b331e8aa4e6cdb86f214f3d575f2a);
+            
+        
+
+        marker_f25849e29f5fcc2b8254139198760662.bindPopup(popup_5e96400575e689b7f4ab2ccfb73160ab)
+        ;
+
+        
+    
+    
+            var marker_7cfa048a7bd7fdf38f16f3388074a454 = L.marker(
+                [-6.178996, 106.791941],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_3e5b127558e0a4a3ff4a19c53865cb7a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7cfa048a7bd7fdf38f16f3388074a454.setIcon(icon_3e5b127558e0a4a3ff4a19c53865cb7a);
+        
+    
+        var popup_ec53aafa579d8425f1208b44a069e8b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b7a2966e581b61ac70be91cffeff609a = $(`<div id="html_b7a2966e581b61ac70be91cffeff609a" style="width: 100.0%; height: 100.0%;">         <b>Skyrink - Mall Taman Anggrek</b><br>         <button onclick="parent.setCoordinates(-6.178996, 106.791941)">Pilih</button>         </div>`)[0];
+                popup_ec53aafa579d8425f1208b44a069e8b7.setContent(html_b7a2966e581b61ac70be91cffeff609a);
+            
+        
+
+        marker_7cfa048a7bd7fdf38f16f3388074a454.bindPopup(popup_ec53aafa579d8425f1208b44a069e8b7)
+        ;
+
+        
+    
+    
+            var marker_9d8d2ad46a35d416b3ca7013c6ca3215 = L.marker(
+                [-6.360248700000001, 106.893842],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_ce0cb65ae1caed7c2903ccd7f3719dd4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9d8d2ad46a35d416b3ca7013c6ca3215.setIcon(icon_ce0cb65ae1caed7c2903ccd7f3719dd4);
+        
+    
+        var popup_3e211715ca40aaf90e1297ce571f7e8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c9e637cb09995b2fa5217c8dbc75b589 = $(`<div id="html_c9e637cb09995b2fa5217c8dbc75b589" style="width: 100.0%; height: 100.0%;">         <b>Bumi Perkemahan Cibubur</b><br>         <button onclick="parent.setCoordinates(-6.360248700000001, 106.893842)">Pilih</button>         </div>`)[0];
+                popup_3e211715ca40aaf90e1297ce571f7e8a.setContent(html_c9e637cb09995b2fa5217c8dbc75b589);
+            
+        
+
+        marker_9d8d2ad46a35d416b3ca7013c6ca3215.bindPopup(popup_3e211715ca40aaf90e1297ce571f7e8a)
+        ;
+
+        
+    
+    
+            var marker_a396b3d2e82a19fde3786f0512d3c4be = L.marker(
+                [-6.168069000000001, 106.8239727],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_3cba9d248690d5f156d672e0c5906d2c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a396b3d2e82a19fde3786f0512d3c4be.setIcon(icon_3cba9d248690d5f156d672e0c5906d2c);
+        
+    
+        var popup_b52d028d15be51f846db9a94ebf95915 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0405bb5eb8b082c21896e3f69f2deaea = $(`<div id="html_0405bb5eb8b082c21896e3f69f2deaea" style="width: 100.0%; height: 100.0%;">         <b>Istana Negara Republik Indonesia</b><br>         <button onclick="parent.setCoordinates(-6.168069000000001, 106.8239727)">Pilih</button>         </div>`)[0];
+                popup_b52d028d15be51f846db9a94ebf95915.setContent(html_0405bb5eb8b082c21896e3f69f2deaea);
+            
+        
+
+        marker_a396b3d2e82a19fde3786f0512d3c4be.bindPopup(popup_b52d028d15be51f846db9a94ebf95915)
+        ;
+
+        
+    
+    
+            var marker_8c832827efc21f423780e9c303cd3fea = L.marker(
+                [-6.190942, 106.767622],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_4e65c0e5021901873309b93f58e2f956 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8c832827efc21f423780e9c303cd3fea.setIcon(icon_4e65c0e5021901873309b93f58e2f956);
+        
+    
+        var popup_2f226c0d52d3c35e60a35b55488bb743 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2de1c3c53a96ee643256ced349d1f7c0 = $(`<div id="html_2de1c3c53a96ee643256ced349d1f7c0" style="width: 100.0%; height: 100.0%;">         <b>Museum Macan (Modern and Contemporary Art in Nusantara)</b><br>         <button onclick="parent.setCoordinates(-6.190942, 106.767622)">Pilih</button>         </div>`)[0];
+                popup_2f226c0d52d3c35e60a35b55488bb743.setContent(html_2de1c3c53a96ee643256ced349d1f7c0);
+            
+        
+
+        marker_8c832827efc21f423780e9c303cd3fea.bindPopup(popup_2f226c0d52d3c35e60a35b55488bb743)
+        ;
+
+        
+    
+    
+            var marker_67631ca3063c3e8da43e1639a3b8376a = L.marker(
+                [-6.178548200000001, 106.8327716],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_47182e2254bb5841c4b2163784054719 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_67631ca3063c3e8da43e1639a3b8376a.setIcon(icon_47182e2254bb5841c4b2163784054719);
+        
+    
+        var popup_88207786af5ea8268d82172ab4a03bb6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_65f82a475dd0eba468e3e0e57cd10064 = $(`<div id="html_65f82a475dd0eba468e3e0e57cd10064" style="width: 100.0%; height: 100.0%;">         <b>Galeri Nasional Indonesia</b><br>         <button onclick="parent.setCoordinates(-6.178548200000001, 106.8327716)">Pilih</button>         </div>`)[0];
+                popup_88207786af5ea8268d82172ab4a03bb6.setContent(html_65f82a475dd0eba468e3e0e57cd10064);
+            
+        
+
+        marker_67631ca3063c3e8da43e1639a3b8376a.bindPopup(popup_88207786af5ea8268d82172ab4a03bb6)
+        ;
+
+        
+    
+    
+            var marker_1a4df943681af0003f61410f65104ae9 = L.marker(
+                [-6.1269553, 106.8085899],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_6f76bf1b80f44bf9cb45b4cddc517ef4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1a4df943681af0003f61410f65104ae9.setIcon(icon_6f76bf1b80f44bf9cb45b4cddc517ef4);
+        
+    
+        var popup_42284cf091cc636f3eade45c78a49cfc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c99001c39e876526218d285f1e09fa0 = $(`<div id="html_9c99001c39e876526218d285f1e09fa0" style="width: 100.0%; height: 100.0%;">         <b>Museum Bahari Jakarta</b><br>         <button onclick="parent.setCoordinates(-6.1269553, 106.8085899)">Pilih</button>         </div>`)[0];
+                popup_42284cf091cc636f3eade45c78a49cfc.setContent(html_9c99001c39e876526218d285f1e09fa0);
+            
+        
+
+        marker_1a4df943681af0003f61410f65104ae9.bindPopup(popup_42284cf091cc636f3eade45c78a49cfc)
+        ;
+
+        
+    
+    
+            var marker_443a41792ed60d5180a7b20e2bd55415 = L.marker(
+                [-6.1342598, 106.814552],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_64f1ab3abdb610cafd16c32a1be75e00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_443a41792ed60d5180a7b20e2bd55415.setIcon(icon_64f1ab3abdb610cafd16c32a1be75e00);
+        
+    
+        var popup_74729487b1ab6844c5a9eddd05dc8abd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0940f852bd79da1b33eece08aaa41171 = $(`<div id="html_0940f852bd79da1b33eece08aaa41171" style="width: 100.0%; height: 100.0%;">         <b>Museum Seni Rupa dan Kramik</b><br>         <button onclick="parent.setCoordinates(-6.1342598, 106.814552)">Pilih</button>         </div>`)[0];
+                popup_74729487b1ab6844c5a9eddd05dc8abd.setContent(html_0940f852bd79da1b33eece08aaa41171);
+            
+        
+
+        marker_443a41792ed60d5180a7b20e2bd55415.bindPopup(popup_74729487b1ab6844c5a9eddd05dc8abd)
+        ;
+
+        
+    
+    
+            var marker_c3648fa0136406a653b4505a3fbf1471 = L.marker(
+                [-6.2555033, 106.8122591],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_a6b98e370c03d28dfe8858c9217bfe6b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c3648fa0136406a653b4505a3fbf1471.setIcon(icon_a6b98e370c03d28dfe8858c9217bfe6b);
+        
+    
+        var popup_532699483a225f9b97e9fc8fe854d934 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_140ff2e6ee0bae3ea67674e69df9ed11 = $(`<div id="html_140ff2e6ee0bae3ea67674e69df9ed11" style="width: 100.0%; height: 100.0%;">         <b>The Escape Hunt</b><br>         <button onclick="parent.setCoordinates(-6.2555033, 106.8122591)">Pilih</button>         </div>`)[0];
+                popup_532699483a225f9b97e9fc8fe854d934.setContent(html_140ff2e6ee0bae3ea67674e69df9ed11);
+            
+        
+
+        marker_c3648fa0136406a653b4505a3fbf1471.bindPopup(popup_532699483a225f9b97e9fc8fe854d934)
+        ;
+
+        
+    
+    
+            var marker_b1fbd84af2fe6d7c5efce7bbcd779393 = L.marker(
+                [-6.194997799999999, 106.8230496],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_46899ea1e7bf249167f9802293353696 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b1fbd84af2fe6d7c5efce7bbcd779393.setIcon(icon_46899ea1e7bf249167f9802293353696);
+        
+    
+        var popup_286e974b5149e464b5af31260baf45bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2f4163fc298b68754f129816e6d02c5c = $(`<div id="html_2f4163fc298b68754f129816e6d02c5c" style="width: 100.0%; height: 100.0%;">         <b>Monumen Selamat Datang</b><br>         <button onclick="parent.setCoordinates(-6.194997799999999, 106.8230496)">Pilih</button>         </div>`)[0];
+                popup_286e974b5149e464b5af31260baf45bb.setContent(html_2f4163fc298b68754f129816e6d02c5c);
+            
+        
+
+        marker_b1fbd84af2fe6d7c5efce7bbcd779393.bindPopup(popup_286e974b5149e464b5af31260baf45bb)
+        ;
+
+        
+    
+    
+            var marker_e4924ab6f8983276c2cb1549b6c65c1c = L.marker(
+                [-6.1752647, 106.7904684],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_773f76d99c6c1a572dd81e520d40c2b5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e4924ab6f8983276c2cb1549b6c65c1c.setIcon(icon_773f76d99c6c1a572dd81e520d40c2b5);
+        
+    
+        var popup_6c3a338f4c46e2af68b0072476952b44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b26f8616a68f4bedb811b617946fcbc = $(`<div id="html_7b26f8616a68f4bedb811b617946fcbc" style="width: 100.0%; height: 100.0%;">         <b>Jakarta Aquarium dan Safari</b><br>         <button onclick="parent.setCoordinates(-6.1752647, 106.7904684)">Pilih</button>         </div>`)[0];
+                popup_6c3a338f4c46e2af68b0072476952b44.setContent(html_7b26f8616a68f4bedb811b617946fcbc);
+            
+        
+
+        marker_e4924ab6f8983276c2cb1549b6c65c1c.bindPopup(popup_6c3a338f4c46e2af68b0072476952b44)
+        ;
+
+        
+    
+    
+            var marker_9473b94a98ff691f4a76dd5f14de1ec8 = L.marker(
+                [-5.729671599999999, 106.5714158],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_9cc02efd62b8341b78f291c418b1e9aa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9473b94a98ff691f4a76dd5f14de1ec8.setIcon(icon_9cc02efd62b8341b78f291c418b1e9aa);
+        
+    
+        var popup_6404e3fa66b1ec7404405e64db63bacd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b94ccc1d72e514735e811aae8a3416d3 = $(`<div id="html_b94ccc1d72e514735e811aae8a3416d3" style="width: 100.0%; height: 100.0%;">         <b>Pulau Semak Daun</b><br>         <button onclick="parent.setCoordinates(-5.729671599999999, 106.5714158)">Pilih</button>         </div>`)[0];
+                popup_6404e3fa66b1ec7404405e64db63bacd.setContent(html_b94ccc1d72e514735e811aae8a3416d3);
+            
+        
+
+        marker_9473b94a98ff691f4a76dd5f14de1ec8.bindPopup(popup_6404e3fa66b1ec7404405e64db63bacd)
+        ;
+
+        
+    
+    
+            var marker_ffa1d52fcee0a45505aae3f14d9de76f = L.marker(
+                [-6.1978861, 106.8346708],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_58d5d061450f1f1c7c977f5173a15cf3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ffa1d52fcee0a45505aae3f14d9de76f.setIcon(icon_58d5d061450f1f1c7c977f5173a15cf3);
+        
+    
+        var popup_d10d62d7b4a27a66d158623bf129ec8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_35598de2c8bf9dbc6d14c3ba112f74a0 = $(`<div id="html_35598de2c8bf9dbc6d14c3ba112f74a0" style="width: 100.0%; height: 100.0%;">         <b>Taman Situ Lembang</b><br>         <button onclick="parent.setCoordinates(-6.1978861, 106.8346708)">Pilih</button>         </div>`)[0];
+                popup_d10d62d7b4a27a66d158623bf129ec8a.setContent(html_35598de2c8bf9dbc6d14c3ba112f74a0);
+            
+        
+
+        marker_ffa1d52fcee0a45505aae3f14d9de76f.bindPopup(popup_d10d62d7b4a27a66d158623bf129ec8a)
+        ;
+
+        
+    
+    
+            var marker_8383641f1a7aa3983b4512de7f5d8e16 = L.marker(
+                [-6.1891586, 106.8397738],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_f03373d8af9a6ca7fd20cc5f600a2450 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8383641f1a7aa3983b4512de7f5d8e16.setIcon(icon_f03373d8af9a6ca7fd20cc5f600a2450);
+        
+    
+        var popup_ab8e8f0d5dfb48838a5701b29759a8ff = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4c313c141d834ae988779d69816e30fe = $(`<div id="html_4c313c141d834ae988779d69816e30fe" style="width: 100.0%; height: 100.0%;">         <b>Taman Ismail Marzuki</b><br>         <button onclick="parent.setCoordinates(-6.1891586, 106.8397738)">Pilih</button>         </div>`)[0];
+                popup_ab8e8f0d5dfb48838a5701b29759a8ff.setContent(html_4c313c141d834ae988779d69816e30fe);
+            
+        
+
+        marker_8383641f1a7aa3983b4512de7f5d8e16.bindPopup(popup_ab8e8f0d5dfb48838a5701b29759a8ff)
+        ;
+
+        
+    
+    
+            var marker_2921dfffbab56c8c549e73f9c7229914 = L.marker(
+                [-6.1948499, 106.8200607],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_94e93f7e42b6db1338c38df7f8efecf8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2921dfffbab56c8c549e73f9c7229914.setIcon(icon_94e93f7e42b6db1338c38df7f8efecf8);
+        
+    
+        var popup_d5847f4aed589d3ae1be5486b534d20b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_476ec62f83a1b75a3af50a8a7ddcf706 = $(`<div id="html_476ec62f83a1b75a3af50a8a7ddcf706" style="width: 100.0%; height: 100.0%;">         <b>Galeri Indonesia Kaya</b><br>         <button onclick="parent.setCoordinates(-6.1948499, 106.8200607)">Pilih</button>         </div>`)[0];
+                popup_d5847f4aed589d3ae1be5486b534d20b.setContent(html_476ec62f83a1b75a3af50a8a7ddcf706);
+            
+        
+
+        marker_2921dfffbab56c8c549e73f9c7229914.bindPopup(popup_d5847f4aed589d3ae1be5486b534d20b)
+        ;
+
+        
+    
+    
+            var marker_5819f17fb8e591c1c5697d3ffd46d06d = L.marker(
+                [-6.186183799999998, 106.8364761],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_3f2af8c9396cd33dd598d768c611e5a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5819f17fb8e591c1c5697d3ffd46d06d.setIcon(icon_3f2af8c9396cd33dd598d768c611e5a4);
+        
+    
+        var popup_6c43ce0b5649b6e9f66261a7c7928c59 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e4583d55aaa24b6f50bfe092438d411b = $(`<div id="html_e4583d55aaa24b6f50bfe092438d411b" style="width: 100.0%; height: 100.0%;">         <b>Museum Joang 45</b><br>         <button onclick="parent.setCoordinates(-6.186183799999998, 106.8364761)">Pilih</button>         </div>`)[0];
+                popup_6c43ce0b5649b6e9f66261a7c7928c59.setContent(html_e4583d55aaa24b6f50bfe092438d411b);
+            
+        
+
+        marker_5819f17fb8e591c1c5697d3ffd46d06d.bindPopup(popup_6c43ce0b5649b6e9f66261a7c7928c59)
+        ;
+
+        
+    
+    
+            var marker_afbe39b7b557934baa7f7cbdf86d1db7 = L.marker(
+                [-6.190081899999999, 106.8388532],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_2f9b6b4c2767ddf1a75e76fbdd9fe12f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_afbe39b7b557934baa7f7cbdf86d1db7.setIcon(icon_2f9b6b4c2767ddf1a75e76fbdd9fe12f);
+        
+    
+        var popup_036b88985c56f349b478f3ab60676dce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_63a66dc40d600c810eb116f2c9e4054e = $(`<div id="html_63a66dc40d600c810eb116f2c9e4054e" style="width: 100.0%; height: 100.0%;">         <b>Jakarta Planetarium</b><br>         <button onclick="parent.setCoordinates(-6.190081899999999, 106.8388532)">Pilih</button>         </div>`)[0];
+                popup_036b88985c56f349b478f3ab60676dce.setContent(html_63a66dc40d600c810eb116f2c9e4054e);
+            
+        
+
+        marker_afbe39b7b557934baa7f7cbdf86d1db7.bindPopup(popup_036b88985c56f349b478f3ab60676dce)
+        ;
+
+        
+    
+    
+            var marker_6e13bf279b3956d04eb04110a989a779 = L.marker(
+                [-6.3651357, 106.7617984],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_24815496f38f9398fd046508c82c05f1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6e13bf279b3956d04eb04110a989a779.setIcon(icon_24815496f38f9398fd046508c82c05f1);
+        
+    
+        var popup_69e71450efd26e26457820efbb81be70 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccb6a988f808ec51e855ea54df8ac062 = $(`<div id="html_ccb6a988f808ec51e855ea54df8ac062" style="width: 100.0%; height: 100.0%;">         <b>Kampung Cina</b><br>         <button onclick="parent.setCoordinates(-6.3651357, 106.7617984)">Pilih</button>         </div>`)[0];
+                popup_69e71450efd26e26457820efbb81be70.setContent(html_ccb6a988f808ec51e855ea54df8ac062);
+            
+        
+
+        marker_6e13bf279b3956d04eb04110a989a779.bindPopup(popup_69e71450efd26e26457820efbb81be70)
+        ;
+
+        
+    
+    
+            var marker_9f05d760233461a0bf4994bf1922f0b7 = L.marker(
+                [-6.10016, 106.96057],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_0046d03b45690d54d1cd0ff2fa16c2e7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9f05d760233461a0bf4994bf1922f0b7.setIcon(icon_0046d03b45690d54d1cd0ff2fa16c2e7);
+        
+    
+        var popup_1052946206439073115ffa48369c460f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4cb9969c1fa5d89609bb2cbf929cd895 = $(`<div id="html_4cb9969c1fa5d89609bb2cbf929cd895" style="width: 100.0%; height: 100.0%;">         <b>Rumah Sipitung</b><br>         <button onclick="parent.setCoordinates(-6.10016, 106.96057)">Pilih</button>         </div>`)[0];
+                popup_1052946206439073115ffa48369c460f.setContent(html_4cb9969c1fa5d89609bb2cbf929cd895);
+            
+        
+
+        marker_9f05d760233461a0bf4994bf1922f0b7.bindPopup(popup_1052946206439073115ffa48369c460f)
+        ;
+
+        
+    
+    
+            var marker_1551f9643c75333cc256a3789acec65d = L.marker(
+                [-6.340151399999999, 106.9012561],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_fb3b59d9b86c056f68a697b90c621b13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1551f9643c75333cc256a3789acec65d.setIcon(icon_fb3b59d9b86c056f68a697b90c621b13);
+        
+    
+        var popup_fd5428396325074958aea9daa3b66e0c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c26286108850aacd935de05691b7d366 = $(`<div id="html_c26286108850aacd935de05691b7d366" style="width: 100.0%; height: 100.0%;">         <b>Taman Agrowisata Cilangkap</b><br>         <button onclick="parent.setCoordinates(-6.340151399999999, 106.9012561)">Pilih</button>         </div>`)[0];
+                popup_fd5428396325074958aea9daa3b66e0c.setContent(html_c26286108850aacd935de05691b7d366);
+            
+        
+
+        marker_1551f9643c75333cc256a3789acec65d.bindPopup(popup_fd5428396325074958aea9daa3b66e0c)
+        ;
+
+        
+    
+    
+            var marker_47fe28e39a8ce1ef2cd4894d6c2ede01 = L.marker(
+                [-6.144473700000001, 106.8126018],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_4e9c7cb11c89c4c9a99aa605aacf5f64 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_47fe28e39a8ce1ef2cd4894d6c2ede01.setIcon(icon_4e9c7cb11c89c4c9a99aa605aacf5f64);
+        
+    
+        var popup_057689f67395f5636764eabfa28530cc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b4c9f0d5ecf1025637a2c332227d3f8a = $(`<div id="html_b4c9f0d5ecf1025637a2c332227d3f8a" style="width: 100.0%; height: 100.0%;">         <b>Klenteng Jin De Yuan</b><br>         <button onclick="parent.setCoordinates(-6.144473700000001, 106.8126018)">Pilih</button>         </div>`)[0];
+                popup_057689f67395f5636764eabfa28530cc.setContent(html_b4c9f0d5ecf1025637a2c332227d3f8a);
+            
+        
+
+        marker_47fe28e39a8ce1ef2cd4894d6c2ede01.bindPopup(popup_057689f67395f5636764eabfa28530cc)
+        ;
+
+        
+    
+    
+            var marker_397f4e55bd8293f495b7b4ed1d1d27ec = L.marker(
+                [-6.1194215, 106.8502435],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_f8ba22b4633d932012288b7b23657572 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_397f4e55bd8293f495b7b4ed1d1d27ec.setIcon(icon_f8ba22b4633d932012288b7b23657572);
+        
+    
+        var popup_91e06bb9807392d4a64a27b5887e14f1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cf9a63c88a0bd5c39b40d4f90f3eccee = $(`<div id="html_cf9a63c88a0bd5c39b40d4f90f3eccee" style="width: 100.0%; height: 100.0%;">         <b>Pantai Ancol</b><br>         <button onclick="parent.setCoordinates(-6.1194215, 106.8502435)">Pilih</button>         </div>`)[0];
+                popup_91e06bb9807392d4a64a27b5887e14f1.setContent(html_cf9a63c88a0bd5c39b40d4f90f3eccee);
+            
+        
+
+        marker_397f4e55bd8293f495b7b4ed1d1d27ec.bindPopup(popup_91e06bb9807392d4a64a27b5887e14f1)
+        ;
+
+        
+    
+    
+            var marker_94f9639d6207257feb2bd92377b88bae = L.marker(
+                [-6.170554999999999, 106.8350378],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_cf6aa517949ac02f7bf1cd942bcf3be7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94f9639d6207257feb2bd92377b88bae.setIcon(icon_cf6aa517949ac02f7bf1cd942bcf3be7);
+        
+    
+        var popup_ac7a3671a7123ddf28c440c5dce8264f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9f35bbd578be0864a57952ba38f4ce8 = $(`<div id="html_f9f35bbd578be0864a57952ba38f4ce8" style="width: 100.0%; height: 100.0%;">         <b>Taman Lapangan Banteng</b><br>         <button onclick="parent.setCoordinates(-6.170554999999999, 106.8350378)">Pilih</button>         </div>`)[0];
+                popup_ac7a3671a7123ddf28c440c5dce8264f.setContent(html_f9f35bbd578be0864a57952ba38f4ce8);
+            
+        
+
+        marker_94f9639d6207257feb2bd92377b88bae.bindPopup(popup_ac7a3671a7123ddf28c440c5dce8264f)
+        ;
+
+        
+    
+    
+            var marker_dbbedfa1253a775b15119d48b6770cb8 = L.marker(
+                [-6.245229400000001, 106.7946655],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_4bb474721e9aa260d652accb1cd2d326 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dbbedfa1253a775b15119d48b6770cb8.setIcon(icon_4bb474721e9aa260d652accb1cd2d326);
+        
+    
+        var popup_deb87060c5c57dc029362b480e47f394 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bccba37ea0a96093437ab500a560a4a8 = $(`<div id="html_bccba37ea0a96093437ab500a560a4a8" style="width: 100.0%; height: 100.0%;">         <b>Taman Ayodya</b><br>         <button onclick="parent.setCoordinates(-6.245229400000001, 106.7946655)">Pilih</button>         </div>`)[0];
+                popup_deb87060c5c57dc029362b480e47f394.setContent(html_bccba37ea0a96093437ab500a560a4a8);
+            
+        
+
+        marker_dbbedfa1253a775b15119d48b6770cb8.bindPopup(popup_deb87060c5c57dc029362b480e47f394)
+        ;
+
+        
+    
+    
+            var marker_293ec7dbe3224822ca3cfc8df8580d42 = L.marker(
+                [-6.183838799999999, 106.8430507],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_755b66fe0c07537b598dd828dae15949 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_293ec7dbe3224822ca3cfc8df8580d42.setIcon(icon_755b66fe0c07537b598dd828dae15949);
+        
+    
+        var popup_2b45fb19770faa70cc9c1f4fd4b62334 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_03093af3b79aa60bf99fa64fc138b44f = $(`<div id="html_03093af3b79aa60bf99fa64fc138b44f" style="width: 100.0%; height: 100.0%;">         <b>Museum Sumpah Pemuda</b><br>         <button onclick="parent.setCoordinates(-6.183838799999999, 106.8430507)">Pilih</button>         </div>`)[0];
+                popup_2b45fb19770faa70cc9c1f4fd4b62334.setContent(html_03093af3b79aa60bf99fa64fc138b44f);
+            
+        
+
+        marker_293ec7dbe3224822ca3cfc8df8580d42.bindPopup(popup_2b45fb19770faa70cc9c1f4fd4b62334)
+        ;
+
+        
+    
+    
+            var marker_ca005090782b489b5e2d6fa23457eec5 = L.marker(
+                [-6.187963400000002, 106.8096081],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_2ee60e09d72a8df7fdf7e66b0245369a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ca005090782b489b5e2d6fa23457eec5.setIcon(icon_2ee60e09d72a8df7fdf7e66b0245369a);
+        
+    
+        var popup_0f078f0d071e561786658d16b565eeac = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_bd11304cd1be4c3dcc088928eaef32aa = $(`<div id="html_bd11304cd1be4c3dcc088928eaef32aa" style="width: 100.0%; height: 100.0%;">         <b>Museum Tekstil</b><br>         <button onclick="parent.setCoordinates(-6.187963400000002, 106.8096081)">Pilih</button>         </div>`)[0];
+                popup_0f078f0d071e561786658d16b565eeac.setContent(html_bd11304cd1be4c3dcc088928eaef32aa);
+            
+        
+
+        marker_ca005090782b489b5e2d6fa23457eec5.bindPopup(popup_0f078f0d071e561786658d16b565eeac)
+        ;
+
+        
+    
+    
+            var marker_c20fd516cbb0954803fac3605082f137 = L.marker(
+                [-6.2030468, 106.8466623],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_0048ec63bc8fb1323db73ba6d150a28d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c20fd516cbb0954803fac3605082f137.setIcon(icon_0048ec63bc8fb1323db73ba6d150a28d);
+        
+    
+        var popup_d3c32a544b0f8b8097eca0608bb83a51 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_314ab494f6723b597f121b9213e399ab = $(`<div id="html_314ab494f6723b597f121b9213e399ab" style="width: 100.0%; height: 100.0%;">         <b>Tugu Proklamasi</b><br>         <button onclick="parent.setCoordinates(-6.2030468, 106.8466623)">Pilih</button>         </div>`)[0];
+                popup_d3c32a544b0f8b8097eca0608bb83a51.setContent(html_314ab494f6723b597f121b9213e399ab);
+            
+        
+
+        marker_c20fd516cbb0954803fac3605082f137.bindPopup(popup_d3c32a544b0f8b8097eca0608bb83a51)
+        ;
+
+        
+    
+    
+            var marker_8363390bbd757bf3267b9d18a316775a = L.marker(
+                [-6.303904200000001, 106.8936219],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_ac550e791d69db9b67cc548caf316fb5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8363390bbd757bf3267b9d18a316775a.setIcon(icon_ac550e791d69db9b67cc548caf316fb5);
+        
+    
+        var popup_3424a0b7ca5d02b9cda6af8b3d18b0ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_454493343faf75f335c5a021562acfb2 = $(`<div id="html_454493343faf75f335c5a021562acfb2" style="width: 100.0%; height: 100.0%;">         <b>Taman Legenda Keong Emas</b><br>         <button onclick="parent.setCoordinates(-6.303904200000001, 106.8936219)">Pilih</button>         </div>`)[0];
+                popup_3424a0b7ca5d02b9cda6af8b3d18b0ba.setContent(html_454493343faf75f335c5a021562acfb2);
+            
+        
+
+        marker_8363390bbd757bf3267b9d18a316775a.bindPopup(popup_3424a0b7ca5d02b9cda6af8b3d18b0ba)
+        ;
+
+        
+    
+    
+            var marker_1d51f3bfbcbe973cf2282e70518b7009 = L.marker(
+                [-6.178352, 106.838094],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_b9944c2bdcd27cc82cb4b8f0a1b7a80d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1d51f3bfbcbe973cf2282e70518b7009.setIcon(icon_b9944c2bdcd27cc82cb4b8f0a1b7a80d);
+        
+    
+        var popup_a026c5bebe2743cd2606db97e0cc9ac0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4ee6320a23602d6cacf9d034f68996a = $(`<div id="html_f4ee6320a23602d6cacf9d034f68996a" style="width: 100.0%; height: 100.0%;">         <b>Museum Kebangkitan Nasional</b><br>         <button onclick="parent.setCoordinates(-6.178352, 106.838094)">Pilih</button>         </div>`)[0];
+                popup_a026c5bebe2743cd2606db97e0cc9ac0.setContent(html_f4ee6320a23602d6cacf9d034f68996a);
+            
+        
+
+        marker_1d51f3bfbcbe973cf2282e70518b7009.bindPopup(popup_a026c5bebe2743cd2606db97e0cc9ac0)
+        ;
+
+        
+    
+    
+            var marker_cb6d781f903b3e10449f036d872b69ae = L.marker(
+                [-6.204630300000001, 106.8365324],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_9dc85b14a416bf415fd15fcec76df2a6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cb6d781f903b3e10449f036d872b69ae.setIcon(icon_9dc85b14a416bf415fd15fcec76df2a6);
+        
+    
+        var popup_5c8f16f529a954ecb44627c41a26a273 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20eda2a54cd921c8eb351896b562832e = $(`<div id="html_20eda2a54cd921c8eb351896b562832e" style="width: 100.0%; height: 100.0%;">         <b>Museum Sasmita Loka Ahmad Yani</b><br>         <button onclick="parent.setCoordinates(-6.204630300000001, 106.8365324)">Pilih</button>         </div>`)[0];
+                popup_5c8f16f529a954ecb44627c41a26a273.setContent(html_20eda2a54cd921c8eb351896b562832e);
+            
+        
+
+        marker_cb6d781f903b3e10449f036d872b69ae.bindPopup(popup_5c8f16f529a954ecb44627c41a26a273)
+        ;
+
+        
+    
+    
+            var marker_b268e0cb7d2907b59ae91bc624eae6fb = L.marker(
+                [-6.289788499999998, 106.7932681],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_86dc44cafc5be0bce036c4462fdaf300 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b268e0cb7d2907b59ae91bc624eae6fb.setIcon(icon_86dc44cafc5be0bce036c4462fdaf300);
+        
+    
+        var popup_a3d41e9501bc36c2708e4405913e7956 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f43b8a85dfa935657dd1ed93606f5037 = $(`<div id="html_f43b8a85dfa935657dd1ed93606f5037" style="width: 100.0%; height: 100.0%;">         <b>Museum Basoeki Abdullah</b><br>         <button onclick="parent.setCoordinates(-6.289788499999998, 106.7932681)">Pilih</button>         </div>`)[0];
+                popup_a3d41e9501bc36c2708e4405913e7956.setContent(html_f43b8a85dfa935657dd1ed93606f5037);
+            
+        
+
+        marker_b268e0cb7d2907b59ae91bc624eae6fb.bindPopup(popup_a3d41e9501bc36c2708e4405913e7956)
+        ;
+
+        
+    
+    
+            var marker_71101c8a76884da794b4e1296156aade = L.marker(
+                [-6.3080282, 106.790548],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_d164601d0b0994b20c77ae47245fa87d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_71101c8a76884da794b4e1296156aade.setIcon(icon_d164601d0b0994b20c77ae47245fa87d);
+        
+    
+        var popup_22295995aeb1707d613e58b6bdc21a76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_50fe309252a5e7c980793fe23fd7cb1f = $(`<div id="html_50fe309252a5e7c980793fe23fd7cb1f" style="width: 100.0%; height: 100.0%;">         <b>Museum Layang-layang</b><br>         <button onclick="parent.setCoordinates(-6.3080282, 106.790548)">Pilih</button>         </div>`)[0];
+                popup_22295995aeb1707d613e58b6bdc21a76.setContent(html_50fe309252a5e7c980793fe23fd7cb1f);
+            
+        
+
+        marker_71101c8a76884da794b4e1296156aade.bindPopup(popup_22295995aeb1707d613e58b6bdc21a76)
+        ;
+
+        
+    
+    
+            var marker_9a823cbe12053aa886381e8a4076cbb8 = L.marker(
+                [-6.1160075, 106.7692016],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_75868e107e089269991ec2004667ff22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a823cbe12053aa886381e8a4076cbb8.setIcon(icon_75868e107e089269991ec2004667ff22);
+        
+    
+        var popup_7b45b4c8e66fd1463e6b32f196bb3205 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6bc1258b12fe429b013dfb7a6ff4d91c = $(`<div id="html_6bc1258b12fe429b013dfb7a6ff4d91c" style="width: 100.0%; height: 100.0%;">         <b>Margasatwa Muara Angke</b><br>         <button onclick="parent.setCoordinates(-6.1160075, 106.7692016)">Pilih</button>         </div>`)[0];
+                popup_7b45b4c8e66fd1463e6b32f196bb3205.setContent(html_6bc1258b12fe429b013dfb7a6ff4d91c);
+            
+        
+
+        marker_9a823cbe12053aa886381e8a4076cbb8.bindPopup(popup_7b45b4c8e66fd1463e6b32f196bb3205)
+        ;
+
+        
+    
+    
+            var marker_757a7fbb081cb92217b7b269332b2131 = L.marker(
+                [-6.143672200000001, 106.8129398],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_1212a07f380718687149e788e7aa3052 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_757a7fbb081cb92217b7b269332b2131.setIcon(icon_1212a07f380718687149e788e7aa3052);
+        
+    
+        var popup_eb0ee79222299a4169f90fc6d029ad13 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e896b09059d322c071d7ad01ab5bf590 = $(`<div id="html_e896b09059d322c071d7ad01ab5bf590" style="width: 100.0%; height: 100.0%;">         <b>Pasar Petak Sembilan</b><br>         <button onclick="parent.setCoordinates(-6.143672200000001, 106.8129398)">Pilih</button>         </div>`)[0];
+                popup_eb0ee79222299a4169f90fc6d029ad13.setContent(html_e896b09059d322c071d7ad01ab5bf590);
+            
+        
+
+        marker_757a7fbb081cb92217b7b269332b2131.bindPopup(popup_eb0ee79222299a4169f90fc6d029ad13)
+        ;
+
+        
+    
+    
+            var marker_e79f09cf0f855c1b02e13db52e4887a0 = L.marker(
+                [-6.202248200000001, 106.8451968],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_976fbdc490fb0d15a55e99863f9e37a8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_e79f09cf0f855c1b02e13db52e4887a0.setIcon(icon_976fbdc490fb0d15a55e99863f9e37a8);
+        
+    
+        var popup_222b9520dbab3f2e14a6702226e833f5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d42939dba5ba735941a616ecc540d777 = $(`<div id="html_d42939dba5ba735941a616ecc540d777" style="width: 100.0%; height: 100.0%;">         <b>Freedom Library</b><br>         <button onclick="parent.setCoordinates(-6.202248200000001, 106.8451968)">Pilih</button>         </div>`)[0];
+                popup_222b9520dbab3f2e14a6702226e833f5.setContent(html_d42939dba5ba735941a616ecc540d777);
+            
+        
+
+        marker_e79f09cf0f855c1b02e13db52e4887a0.bindPopup(popup_222b9520dbab3f2e14a6702226e833f5)
+        ;
+
+        
+    
+    
+            var marker_9f407d43e4b1658c243d81078fc748be = L.marker(
+                [-6.181291799999999, 106.8268717],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_fdf31140f1952bb5f79107ad27898aaa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9f407d43e4b1658c243d81078fc748be.setIcon(icon_fdf31140f1952bb5f79107ad27898aaa);
+        
+    
+        var popup_451271ae5439d51fbf52ee759970bedf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_44c762e6de3ab0eccd0b63f207b6b61c = $(`<div id="html_44c762e6de3ab0eccd0b63f207b6b61c" style="width: 100.0%; height: 100.0%;">         <b>Perpustakaan Nasional</b><br>         <button onclick="parent.setCoordinates(-6.181291799999999, 106.8268717)">Pilih</button>         </div>`)[0];
+                popup_451271ae5439d51fbf52ee759970bedf.setContent(html_44c762e6de3ab0eccd0b63f207b6b61c);
+            
+        
+
+        marker_9f407d43e4b1658c243d81078fc748be.bindPopup(popup_451271ae5439d51fbf52ee759970bedf)
+        ;
+
+        
+    
+    
+            var marker_0e4c77cab49e28bc19bde68e0b420e6f = L.marker(
+                [-6.379996900000001, 106.8949793],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_8053d06fa456e959dd849983de6a1810 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0e4c77cab49e28bc19bde68e0b420e6f.setIcon(icon_8053d06fa456e959dd849983de6a1810);
+        
+    
+        var popup_2f493f81a624085b9122ec09e802eb92 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b6c4f8a10a43a6686ef6e7c66500c6ed = $(`<div id="html_b6c4f8a10a43a6686ef6e7c66500c6ed" style="width: 100.0%; height: 100.0%;">         <b>Cibubur Garden Diary (Cibugary)</b><br>         <button onclick="parent.setCoordinates(-6.379996900000001, 106.8949793)">Pilih</button>         </div>`)[0];
+                popup_2f493f81a624085b9122ec09e802eb92.setContent(html_b6c4f8a10a43a6686ef6e7c66500c6ed);
+            
+        
+
+        marker_0e4c77cab49e28bc19bde68e0b420e6f.bindPopup(popup_2f493f81a624085b9122ec09e802eb92)
+        ;
+
+        
+    
+    
+            var marker_968820ccf3c971a70576cb9f5b259f90 = L.marker(
+                [-6.113655899999999, 106.7478596],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_06bae7980948c392cba5e69bdecb134f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_968820ccf3c971a70576cb9f5b259f90.setIcon(icon_06bae7980948c392cba5e69bdecb134f);
+        
+    
+        var popup_3d24afbaa232d7bdcde98adfa4ff0797 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_46337d56ba5d9ea1b5a6e319d983dddb = $(`<div id="html_46337d56ba5d9ea1b5a6e319d983dddb" style="width: 100.0%; height: 100.0%;">         <b>Waterboom PIK (Pantai Indah Kapuk)</b><br>         <button onclick="parent.setCoordinates(-6.113655899999999, 106.7478596)">Pilih</button>         </div>`)[0];
+                popup_3d24afbaa232d7bdcde98adfa4ff0797.setContent(html_46337d56ba5d9ea1b5a6e319d983dddb);
+            
+        
+
+        marker_968820ccf3c971a70576cb9f5b259f90.bindPopup(popup_3d24afbaa232d7bdcde98adfa4ff0797)
+        ;
+
+        
+    
+    
+            var marker_1bea8a56b398d4a3023686158640e7a4 = L.marker(
+                [-6.304184100000001, 106.9017725],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_15c77d8dd76d238991ab310cf81243e0 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1bea8a56b398d4a3023686158640e7a4.setIcon(icon_15c77d8dd76d238991ab310cf81243e0);
+        
+    
+        var popup_16d1c91dd2eaa6e8c4b5a563b7f4934b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0d5b52dba42c030515b792ffb0548c71 = $(`<div id="html_0d5b52dba42c030515b792ffb0548c71" style="width: 100.0%; height: 100.0%;">         <b>Museum Perangko</b><br>         <button onclick="parent.setCoordinates(-6.304184100000001, 106.9017725)">Pilih</button>         </div>`)[0];
+                popup_16d1c91dd2eaa6e8c4b5a563b7f4934b.setContent(html_0d5b52dba42c030515b792ffb0548c71);
+            
+        
+
+        marker_1bea8a56b398d4a3023686158640e7a4.bindPopup(popup_16d1c91dd2eaa6e8c4b5a563b7f4934b)
+        ;
+
+        
+    
+    
+            var marker_94772a9e93d80eb947080c2d06d8fe85 = L.marker(
+                [-6.267513, 106.824107],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_15124f5927d003179054d0690389a8cf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_94772a9e93d80eb947080c2d06d8fe85.setIcon(icon_15124f5927d003179054d0690389a8cf);
+        
+    
+        var popup_692011577a863e2e32b778942627e8e9 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e22543e0b177dc1f0b7832a60b1870f6 = $(`<div id="html_e22543e0b177dc1f0b7832a60b1870f6" style="width: 100.0%; height: 100.0%;">         <b>Museum Tengah Kebun</b><br>         <button onclick="parent.setCoordinates(-6.267513, 106.824107)">Pilih</button>         </div>`)[0];
+                popup_692011577a863e2e32b778942627e8e9.setContent(html_e22543e0b177dc1f0b7832a60b1870f6);
+            
+        
+
+        marker_94772a9e93d80eb947080c2d06d8fe85.bindPopup(popup_692011577a863e2e32b778942627e8e9)
+        ;
+
+        
+    
+    
+            var marker_9a637d8587cb7d7f2c48d50c0db3983f = L.marker(
+                [-6.299271800000001, 106.89151],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_7729c0c9c2b828ce15dc06d5a92af108 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9a637d8587cb7d7f2c48d50c0db3983f.setIcon(icon_7729c0c9c2b828ce15dc06d5a92af108);
+        
+    
+        var popup_52825d9f610206075542354b7b5a2449 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_aab14c6716bed662f4d51da9205be639 = $(`<div id="html_aab14c6716bed662f4d51da9205be639" style="width: 100.0%; height: 100.0%;">         <b>SnowBay Waterpark</b><br>         <button onclick="parent.setCoordinates(-6.299271800000001, 106.89151)">Pilih</button>         </div>`)[0];
+                popup_52825d9f610206075542354b7b5a2449.setContent(html_aab14c6716bed662f4d51da9205be639);
+            
+        
+
+        marker_9a637d8587cb7d7f2c48d50c0db3983f.bindPopup(popup_52825d9f610206075542354b7b5a2449)
+        ;
+
+        
+    
+    
+            var marker_bc8997c6381b635bda50a7010ec538d0 = L.marker(
+                [-6.181084299999999, 106.7954476],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_f630cb1c9413c97a064c03b500b402e6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_bc8997c6381b635bda50a7010ec538d0.setIcon(icon_f630cb1c9413c97a064c03b500b402e6);
+        
+    
+        var popup_e63c2118ba7679efd1ea13e71f59fd1e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f7ca2b789f8e71d59928148a99981d2 = $(`<div id="html_3f7ca2b789f8e71d59928148a99981d2" style="width: 100.0%; height: 100.0%;">         <b>Taman Cattleya</b><br>         <button onclick="parent.setCoordinates(-6.181084299999999, 106.7954476)">Pilih</button>         </div>`)[0];
+                popup_e63c2118ba7679efd1ea13e71f59fd1e.setContent(html_3f7ca2b789f8e71d59928148a99981d2);
+            
+        
+
+        marker_bc8997c6381b635bda50a7010ec538d0.bindPopup(popup_e63c2118ba7679efd1ea13e71f59fd1e)
+        ;
+
+        
+    
+    
+            var marker_d928a875e27ed41203518565cb2c53a3 = L.marker(
+                [-6.237140900000001, 106.8526505],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_2ff1db7a884a0e50a7be1e3490f090d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d928a875e27ed41203518565cb2c53a3.setIcon(icon_2ff1db7a884a0e50a7be1e3490f090d1);
+        
+    
+        var popup_c9225f48fef6a32d8f94a1886b5cb8d2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9c34b4e928a748d06692f35f88c91eff = $(`<div id="html_9c34b4e928a748d06692f35f88c91eff" style="width: 100.0%; height: 100.0%;">         <b>Taman Hutan Tebet</b><br>         <button onclick="parent.setCoordinates(-6.237140900000001, 106.8526505)">Pilih</button>         </div>`)[0];
+                popup_c9225f48fef6a32d8f94a1886b5cb8d2.setContent(html_9c34b4e928a748d06692f35f88c91eff);
+            
+        
+
+        marker_d928a875e27ed41203518565cb2c53a3.bindPopup(popup_c9225f48fef6a32d8f94a1886b5cb8d2)
+        ;
+
+        
+    
+    
+            var marker_184e7f9e933ed414d7da02c8e30ba407 = L.marker(
+                [-6.210694499999999, 106.7643954],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_d4b6e6e9e859750abe51ca56d4cf0d8f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_184e7f9e933ed414d7da02c8e30ba407.setIcon(icon_d4b6e6e9e859750abe51ca56d4cf0d8f);
+        
+    
+        var popup_b46ad2c9324c8b5bae2ccefa575a6d1f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_45690ae6af4a718e6c5914677ceca07a = $(`<div id="html_45690ae6af4a718e6c5914677ceca07a" style="width: 100.0%; height: 100.0%;">         <b>Hutan Kota Srengseng</b><br>         <button onclick="parent.setCoordinates(-6.210694499999999, 106.7643954)">Pilih</button>         </div>`)[0];
+                popup_b46ad2c9324c8b5bae2ccefa575a6d1f.setContent(html_45690ae6af4a718e6c5914677ceca07a);
+            
+        
+
+        marker_184e7f9e933ed414d7da02c8e30ba407.bindPopup(popup_b46ad2c9324c8b5bae2ccefa575a6d1f)
+        ;
+
+        
+    
+    
+            var marker_f1bd2c251202e151dafa16797bdbd238 = L.marker(
+                [-6.3226133, 106.8241871],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_81121208f64b292a378fa18488c2ddd6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_f1bd2c251202e151dafa16797bdbd238.setIcon(icon_81121208f64b292a378fa18488c2ddd6);
+        
+    
+        var popup_f38b795eef0e72acd416467d0bf060ab = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60e53a3d5125d962a427143a9bddd71c = $(`<div id="html_60e53a3d5125d962a427143a9bddd71c" style="width: 100.0%; height: 100.0%;">         <b>Taman Spathodea</b><br>         <button onclick="parent.setCoordinates(-6.3226133, 106.8241871)">Pilih</button>         </div>`)[0];
+                popup_f38b795eef0e72acd416467d0bf060ab.setContent(html_60e53a3d5125d962a427143a9bddd71c);
+            
+        
+
+        marker_f1bd2c251202e151dafa16797bdbd238.bindPopup(popup_f38b795eef0e72acd416467d0bf060ab)
+        ;
+
+        
+    
+    
+            var marker_0edc8d222054e72ef9f309574327ec21 = L.marker(
+                [-6.193925900000002, 106.8222158],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_d677aaab0ccdc38a70384820d0bb2d39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0edc8d222054e72ef9f309574327ec21.setIcon(icon_d677aaab0ccdc38a70384820d0bb2d39);
+        
+    
+        var popup_fc42afeeb76093ba081280df537bdecc = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3d49bb2e89269dceb9b95187d575e608 = $(`<div id="html_3d49bb2e89269dceb9b95187d575e608" style="width: 100.0%; height: 100.0%;">         <b>Plaza Indonesia</b><br>         <button onclick="parent.setCoordinates(-6.193925900000002, 106.8222158)">Pilih</button>         </div>`)[0];
+                popup_fc42afeeb76093ba081280df537bdecc.setContent(html_3d49bb2e89269dceb9b95187d575e608);
+            
+        
+
+        marker_0edc8d222054e72ef9f309574327ec21.bindPopup(popup_fc42afeeb76093ba081280df537bdecc)
+        ;
+
+        
+    
+    
+            var marker_547def9f25e3732f0172b7ba393709a0 = L.marker(
+                [-6.1946096, 106.817905],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_1628032152f3551d51d4c650bfca7e78 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_547def9f25e3732f0172b7ba393709a0.setIcon(icon_1628032152f3551d51d4c650bfca7e78);
+        
+    
+        var popup_94a2e8c7eb57ace32ba1f102dc9e5eef = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3ee1f565e196ca67ac248883a46598cd = $(`<div id="html_3ee1f565e196ca67ac248883a46598cd" style="width: 100.0%; height: 100.0%;">         <b>Mall Thamrin City</b><br>         <button onclick="parent.setCoordinates(-6.1946096, 106.817905)">Pilih</button>         </div>`)[0];
+                popup_94a2e8c7eb57ace32ba1f102dc9e5eef.setContent(html_3ee1f565e196ca67ac248883a46598cd);
+            
+        
+
+        marker_547def9f25e3732f0172b7ba393709a0.bindPopup(popup_94a2e8c7eb57ace32ba1f102dc9e5eef)
+        ;
+
+        
+    
+    
+            var marker_689ae8b2bbdf089de7ab30d0e61de8e1 = L.marker(
+                [-6.231698499999999, 106.8185425],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_b4a7c25e999480176c72ffb2233ce128 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_689ae8b2bbdf089de7ab30d0e61de8e1.setIcon(icon_b4a7c25e999480176c72ffb2233ce128);
+        
+    
+        var popup_0586b01948e4d9bda5b23b64de259d2b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2d7c522d455a6f3c867d7aaa7dd377a2 = $(`<div id="html_2d7c522d455a6f3c867d7aaa7dd377a2" style="width: 100.0%; height: 100.0%;">         <b>Museum Satria Mandala</b><br>         <button onclick="parent.setCoordinates(-6.231698499999999, 106.8185425)">Pilih</button>         </div>`)[0];
+                popup_0586b01948e4d9bda5b23b64de259d2b.setContent(html_2d7c522d455a6f3c867d7aaa7dd377a2);
+            
+        
+
+        marker_689ae8b2bbdf089de7ab30d0e61de8e1.bindPopup(popup_0586b01948e4d9bda5b23b64de259d2b)
+        ;
+
+        
+    
+    
+            var marker_682ee9d089cb01c975994de4b5a576c6 = L.marker(
+                [-6.117534399999999, 106.857313],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_4f2e67bc39467d272a47af6bd7d89dc3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_682ee9d089cb01c975994de4b5a576c6.setIcon(icon_4f2e67bc39467d272a47af6bd7d89dc3);
+        
+    
+        var popup_31f870ef2167521f9b67a15d2ca55e8a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b93dd2922da840fc5555537d7b67bf0f = $(`<div id="html_b93dd2922da840fc5555537d7b67bf0f" style="width: 100.0%; height: 100.0%;">         <b>Alive Museum Ancol</b><br>         <button onclick="parent.setCoordinates(-6.117534399999999, 106.857313)">Pilih</button>         </div>`)[0];
+                popup_31f870ef2167521f9b67a15d2ca55e8a.setContent(html_b93dd2922da840fc5555537d7b67bf0f);
+            
+        
+
+        marker_682ee9d089cb01c975994de4b5a576c6.bindPopup(popup_31f870ef2167521f9b67a15d2ca55e8a)
+        ;
+
+        
+    
+    
+            var marker_289b2a81bef6a8f2b470c501d5e7fea2 = L.marker(
+                [-6.184258799999999, 106.824033],
+                {}
+            ).addTo(map_a620e49fac3480523bb4926a82c01830);
+        
+    
+            var icon_92b263bd13a52fe24a321419754d2916 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_289b2a81bef6a8f2b470c501d5e7fea2.setIcon(icon_92b263bd13a52fe24a321419754d2916);
+        
+    
+        var popup_d77190cee20b0bd43ea6913ff3f7bdcd = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8729529705efcadd756cbc22e8f4050a = $(`<div id="html_8729529705efcadd756cbc22e8f4050a" style="width: 100.0%; height: 100.0%;">         <b>Kawasan Kuliner BSM</b><br>         <button onclick="parent.setCoordinates(-6.184258799999999, 106.824033)">Pilih</button>         </div>`)[0];
+                popup_d77190cee20b0bd43ea6913ff3f7bdcd.setContent(html_8729529705efcadd756cbc22e8f4050a);
+            
+        
+
+        marker_289b2a81bef6a8f2b470c501d5e7fea2.bindPopup(popup_d77190cee20b0bd43ea6913ff3f7bdcd)
+        ;
+
+        
+    
+</script>
+</html>

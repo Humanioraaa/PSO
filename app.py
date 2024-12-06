@@ -63,6 +63,7 @@ def calculate():
     # Update bagian cheapest route dengan mempertimbangkan harga dan jarak
     cheapest_5_ids = dataset[['Place_Id', 'Price']].sort_values(by='Price').head(5)['Place_Id'].tolist()
 
+
     nearest_matrix = distance_matrix.loc[nearest_5_ids, nearest_5_ids]
     cheapest_matrix = distance_matrix.loc[cheapest_5_ids, cheapest_5_ids]
 
@@ -87,16 +88,18 @@ def calculate():
     cheapest_route_prices = data_with_user[data_with_user['Place_Id'].isin(cheapest_route)]['Price'].sum()
 
     return render_template(
-        "result.html",
-        nearest_route=nearest_route_names,
-        nearest_distance=nearest_distance,
-        cheapest_route=cheapest_route_names,
-        cheapest_distance=cheapest_distance,
-        nearest_route_coordinates=nearest_route_coordinates,
-        cheapest_route_coordinates=cheapest_route_coordinates,
-        nearest_route_prices=nearest_route_prices,
-        cheapest_route_prices=cheapest_route_prices
-    )
+    "result.html",
+    nearest_route=nearest_route_names,
+    nearest_distance=nearest_distance,
+    cheapest_route=cheapest_route_names,
+    cheapest_distance=cheapest_distance,
+    nearest_route_coordinates=nearest_route_coordinates,
+    cheapest_route_coordinates=cheapest_route_coordinates,
+    nearest_route_prices=nearest_route_prices,
+    cheapest_route_prices=cheapest_route_prices,
+    user_coordinates={"lat": user_lat, "lng": user_long}  # Tambahkan koordinat user
+)
+
 
 
 
